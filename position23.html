@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="rectangulo" style="padding:10px 10px 10px 10px; background-color:#000; color:#fff;">Rectángulo de ejemplo, que variará de opacidad</div>
+
+    <input type="button" id="mostrar" value="Mostrar con fadeIn()">
+    <input type="button" id="ocultar" value="Ocultar con fadeOut()">
+    <input type="button" id="mostrar2" value="Mostrar con fadeIn() en 4000 milisengos">
+    <input type="button" id="ocultar2" value="Ocultar fadeOut() en 4000 milisegundos">
+    <input type="button" id="mostrar3" value="Mostrar con fadeIn() en 4000 milisengos y callback">
+    <input type="button" id="ocultar3" value="Ocultar fadeOut() en 4000 milisegundos y callback">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#mostrar").click(function(event) {
+			$("#rectangulo").fadeIn();
+		});
+		$("#mostrar2").click(function(event) {
+			$("#rectangulo").fadeIn(4000);
+		});
+		$("#mostrar3").click(function(event) {
+			$("#rectangulo").fadeIn(4000, function() {
+				alert ('Efecto fadeIn terminado!');
+				});
+		});
+		$("#ocultar").click(function(event) {
+			$("#rectangulo").fadeOut();
+		});
+		$("#ocultar2").click(function(event) {
+			$("#rectangulo").fadeOut(4000);
+		});
+		$("#ocultar3").click(function(event) {
+			$("#rectangulo").fadeOut(4000, function() {
+				alert ('Efecto fadeOut terminado!');
+				});
+		});
+	});
+</script>
+</body>
+</html>

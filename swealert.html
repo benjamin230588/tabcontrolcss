@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+    background: rgba()!important;
+}
+</style>    
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <script>
+
+/*Swal.fire({
+  //title: 'Error!',
+  text: 'Do you want to continue',
+  icon:"error",
+  position:"top",
+  confirmButtonText:"OK",
+  width:"35%",
+  padding:10,
+  scrollbarPadding: false,
+    // optional
+    heightAuto: false
+  //showConfirmButton:false,
+  //showCloseButton:true
+ 
+})*/
+
+swal.fire({
+    title: "Are you sure?",
+    text: "You will not be able to recover this imaginary file!",
+   
+    position:"top",
+    showCancelButton: true,
+        closeOnConfirm: false,
+        showLoaderOnConfirm: true,
+        confirmButtonColor: '#DD6B55',
+        confirmButtonText: "CONFIRMAR!",
+        cancelButtonText: "CANCELAR!",
+        cancelButtonClass: "btn-danger",
+        allowOutsideClick:false,
+        allowEscapeKey:false,
+        allowEnterKey:false,
+        stopKeydownPropagation:true,
+        backdrop:true,
+        background:"#3ADF00"
+
+ }).then(function(result){
+    if (result.isConfirmed) {
+
+alert('confirm pressed');
+}
+else
+{
+alert('cancel pressed');
+
+}
+}).catch(function(reason){
+    alert("The alert was dismissed by the user: "+reason);
+});
+
+alert("dale");
+
+/*
+
+swal.fire({
+        title: "¿Seguro de Anular Banco?",
+        text: "",
+        type: "info",
+        showCancelButton: true,
+        closeOnConfirm: false,
+        showLoaderOnConfirm: true,
+        confirmButtonText: "CONFIRMAR!",
+        cancelButtonText: "CANCELAR!",
+        cancelButtonClass: "btn-danger",
+    }, function () {
+      alert("ddd");  
+    });
+    
+    
+    var SwalColors = {
+  red: "rgba(250, 50, 50, 0.45)",
+  green: "rgba(50, 250, 50, 0.45)",
+  blue: "rgba(0, 0, 255, 0.45)"
+};
+
+function SwalOverlayColor(color){
+  setTimeout(function(){
+    $(".swal-overlay").css({"background-color":SwalColors[color]});
+  },200);
+}
+
+SwalOverlayColor("blue");
+swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+  .then((willDelete) => {
+  if (willDelete) {
+    SwalOverlayColor("red");
+    swal("Poof! Your imaginary file has been deleted!", {
+      icon: "success",
+    });
+  } else {
+    SwalOverlayColor("green");
+    swal("Your imaginary file is safe!");
+  }
+});
+
+    */
+</script>
+
+</body>
+</html>

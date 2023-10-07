@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+   
+  
+   div {
+  background-color: green;
+  padding: 0px;
+}
+td, th {
+  width:150px !important;
+  height:20px !important;
+  max-width:150px !important;
+  max-height:20px !important;
+  min-width:150px !important;
+  min-height:20px !important;
+}
+table td {
+            padding: 2px !important;
+            margin: 0px !important;
+        }
+        table tbody {
+            font-size: 15px;
+        }
+        textarea:focus, input:focus, input[type]:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+</style>
+</head>
+<body>
+    <br/>
+    <input type="text" id="benja123" value="benjamin" class="form-control">
+    <br/>
+    <input type="text" id="benja1234" value="celular" class="form-control">
+    <div>
+        hola
+    </div>
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >First</th>
+            <th >Last</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+            <td >Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+           
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>@fat</td>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      cadena="benjamin ";
+      console.log("ingreso aqui");
+      //otravariable;
+      console.log("salio aqui");
+     
+      console.log(cadena);
+     // alert("benja 11");
+      let cadena11="benja";
+      let vector33=cadena11.split(",");
+      console.log(vector33);
+      let objtocel={nombre:"benja",edad:12};
+      //console.log(mivariable23);
+      objtocel.direccion="lurin";
+      console.log("nuevo onj",objtocel);
+      
+      let otroobj={...objtocel};
+      otroobj.direccion="callao";
+      console.log("nuevo ",otroobj);
+
+      let objetohoy ={nombre:objtocel.nombre,edad:objtocel.edad};
+      objetohoy.ciudad="chicago";
+      console.log(objetohoy);
+     
+      
+      
+      
+      
+    </script>
+</body>
+</html>

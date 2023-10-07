@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejemplo de jQuery</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td>1111111111</td>
+      <td>1111111111</td>
+      <td>1111111111</td>
+      <td>1111111111</td>
+    </tr>
+   
+  </table>
+  <input type="checkbox" id="check23" value="ddd_555" name="colorfavorito" />
+  <div id="iddiv">
+    benjamin hola
+  </div>
+  <h1 id="titulo">
+    <span>hola</span>
+    Este es el título original
+  </h1>
+  <input type="button" value="dale" id ="idboton"/>
+<input type="button" value="aa" id="numero1">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    let x = $(document);
+    let objbenja={"name":"benja","edad":12};
+    let objeto;
+x.ready(inicializarEventos);
+console.log("primero");
+function inicializarEventos() {
+    console.log(this);
+    objeto=$("#iddiv");
+valor23 = $("#check23").val();!!
+console.log("checkedd uu",valor23);
+alert($('input:checkbox[name=colorfavorito]:checked').val());
+
+if (($('#check23').is(":checked"))) {
+                alert("entro");
+             }
+
+let objTercero = {
+                       U_CardCode: "vv",
+                       U_CardName: "ddd"
+                       
+                   }
+                   console.log("tercro",objTercero);
+    /*console.log($("#numero1"));
+    console.log( $(document));
+    console.log($("#iddiv").text());
+    let tit = document.getElementById('titulo');
+    alert('La cantidad de hijos del nodo div es:' + tit.childNodes.length);
+    tit.childNodes[0].nodeValue = 'Ahora vemos el nuevo título';
+ // let x = $("tr");
+  //x.click(presionFila);*/
+}
+function saludos(){
+  console.log("saludos aa");
+  coloresdiv(objeto);
+
+}
+function coloresdiv(objdiv){
+objdiv.css("background-color","blue")
+}
+$("#idboton").click(saludos)
+//saludos();
+/*
+function presionFila() {
+  let x = $(this);
+  console.log(x);
+  x.css("background-color", "red");
+}
+*/
+  </script>
+</body>
+</html>

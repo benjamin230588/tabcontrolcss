@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+            width: 500px;
+            
+         
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="img23" name="img23" multiple="multiple"/>
+    <input type="text" id="input23" class="hola23"    value="bernjamin">
+    <div hidden="false">
+        hola domingo
+    </div>
+    <div> hola benja</div>
+    <div>
+        caja
+    </div>
+    <input type="text" id="numero1" />
+    <input type="text"  id="numero2"/>
+    
+    <input type="button" onclick="cambiar()">
+    <input type="button" onclick="otro23()">
+    <input type="button" value="Sumar" onclick="sumar()"/>
+ <script>
+     var cadena ;
+     x222;
+    function cambiar(){
+        cadena =document.getElementById("input23");
+        
+    cadena.value="cambio444";
+    console.log(cadena.value);
+   
+    }
+    function otro23(){
+        cadena =document.getElementById("input23");
+        cadena.setAttribute("class","josue123");
+       
+        //console.log(cadena.getAttribute("value"));
+        cadena.setAttribute("value","josue");
+        //console.log(cadena.setAttribute("value","josue");
+    }
+    function sumar(){
+        let numero1 =document.getElementById("numero1").value;
+        let numero2 =document.getElementById("numero2").value;
+        let res= parseInt(numero1) + parseInt(numero2);
+        console.log(res);
+        console.log("tipodato",typeof numero1);
+        //let res= 
+       
+        //console.log(cadena.getAttribute("value"));
+        cadena.setAttribute("value","josue");
+        //console.log(cadena.setAttribute("value","josue");
+    }
+    
+function runX(){
+  x23=5;
+  return x23;
+}
+
+console.log(runX())
+    //let benjamin;
+    //console.log("dato",benjamin);
+
+ </script>
+
+ 
+</body>
+</html>
